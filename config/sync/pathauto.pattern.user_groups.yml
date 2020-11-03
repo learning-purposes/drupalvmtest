@@ -1,0 +1,22 @@
+uuid: 5faf7641-23e2-4430-b385-c6db879a164b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: user_groups
+label: 'User Groups'
+type: 'canonical_entities:node'
+pattern: 'user-group/[node:title]'
+selection_criteria:
+  c95b539d-3633-4d42-a812-2f4e87ba5e1c:
+    id: node_type
+    bundles:
+      user_group: user_group
+    negate: false
+    context_mapping:
+      node: node
+    uuid: c95b539d-3633-4d42-a812-2f4e87ba5e1c
+selection_logic: and
+weight: -5
+relationships: {  }

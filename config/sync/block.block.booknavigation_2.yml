@@ -1,0 +1,21 @@
+uuid: 7879b1b2-ce9a-41fa-afbb-e52f15b97471
+langcode: en
+status: true
+dependencies:
+  module:
+    - book
+  theme:
+    - vani
+id: booknavigation_2
+theme: vani
+region: sidebar_first
+weight: -6
+provider: null
+plugin: book_navigation
+settings:
+  id: book_navigation
+  label: 'Book navigation'
+  provider: book
+  label_display: visible
+  block_mode: 'all pages'
+visibility: {  }

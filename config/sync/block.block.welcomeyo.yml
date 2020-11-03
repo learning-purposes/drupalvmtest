@@ -1,0 +1,25 @@
+uuid: d63df3e8-0deb-436a-9636-c19b93543f71
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6e1c98bf-01c6-4265-94c3-be2f6b035b43'
+  module:
+    - block_content
+  theme:
+    - vani
+id: welcomeyo
+theme: vani
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'block_content:6e1c98bf-01c6-4265-94c3-be2f6b035b43'
+settings:
+  id: 'block_content:6e1c98bf-01c6-4265-94c3-be2f6b035b43'
+  label: 'Welcome yo!'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

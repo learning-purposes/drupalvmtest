@@ -1,0 +1,10 @@
+uuid: 37b0eb6f-47e1-4a15-9d25-cad3a0b3ca33
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.token
+label: Token
+targetEntityType: taxonomy_term
+cache: true

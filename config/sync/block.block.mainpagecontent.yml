@@ -1,0 +1,20 @@
+uuid: 25f73c97-c279-4ed6-801e-167c1630f084
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - vani
+id: mainpagecontent
+theme: vani
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 0b0c10be-9b1b-447c-aecc-fc281a4791b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: article
+label: Articles
+type: 'canonical_entities:node'
+pattern: 'article/[node:title]'
+selection_criteria:
+  15441b69-6011-4937-9d9d-4142031b07f4:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 15441b69-6011-4937-9d9d-4142031b07f4
+selection_logic: and
+weight: -5
+relationships: {  }

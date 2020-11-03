@@ -1,0 +1,12 @@
+uuid: e2ca76db-34de-4d4d-935e-01b522f5e0e0
+langcode: en
+status: true
+dependencies: {  }
+id: summer_intern
+label: 'Summer Intern'
+weight: -7
+is_admin: null
+permissions:
+  - 'create event content'
+  - 'delete own event content'
+  - 'edit own event content'

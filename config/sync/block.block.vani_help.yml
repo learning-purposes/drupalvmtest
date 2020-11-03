@@ -1,0 +1,22 @@
+uuid: 5471f390-4ec6-449d-a69d-4e082b2eacbd
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - vani
+_core:
+  default_config_hash: nTb1lHIIESRE7bhOAd84EEahtSReW5L37MVLF5KyVrg
+id: vani_help
+theme: vani
+region: content_bottom
+weight: -8
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

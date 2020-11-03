@@ -1,0 +1,17 @@
+uuid: e10df854-471a-4e78-8c9e-3a89bc718f19
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'User Group'
+type: user_group
+description: 'This is where we track the user groups.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

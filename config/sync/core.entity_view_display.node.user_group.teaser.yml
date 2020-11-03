@@ -1,0 +1,52 @@
+uuid: a03834f6-b6ca-4edf-b14f-08a67a6dcf02
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.user_group.body
+    - field.field.node.user_group.field_contact_email
+    - field.field.node.user_group.field_event_sponsored
+    - field.field.node.user_group.field_group_contact
+    - field.field.node.user_group.field_group_experience
+    - field.field.node.user_group.field_group_website
+    - node.type.user_group
+  module:
+    - link
+    - text
+    - user
+id: node.user_group.teaser
+targetEntityType: node
+bundle: user_group
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_trimmed
+    weight: 2
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_group_website:
+    type: link
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_contact_email: true
+  field_event_sponsored: true
+  field_group_contact: true
+  field_group_experience: true

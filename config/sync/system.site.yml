@@ -1,0 +1,14 @@
+uuid: ed44b02e-6b01-4f7a-8269-a6a66c1e7c23
+name: 'Marroni''s Ville'
+mail: adminwithu@gmail.com
+slogan: 'All marroni you can get'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

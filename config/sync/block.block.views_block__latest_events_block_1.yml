@@ -1,0 +1,24 @@
+uuid: b4112246-23ba-45c5-ae86-a630791fe8ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_events
+  module:
+    - views
+  theme:
+    - vani
+id: views_block__latest_events_block_1
+theme: vani
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'views_block:latest_events-block_1'
+settings:
+  id: 'views_block:latest_events-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }
