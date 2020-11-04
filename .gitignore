@@ -31,3 +31,5 @@ private/
 
 # Ignore excluded config
 config/excluded
+/.editorconfig
+/.gitattributes
