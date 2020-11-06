@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.user_group.field_group_contact
     - field.field.node.user_group.field_group_experience
     - field.field.node.user_group.field_group_website
+    - field.field.node.user_group.layout_selection
     - node.type.user_group
   module:
     - link
@@ -75,6 +76,12 @@ content:
     third_party_settings: {  }
     type: link_default
     region: content
+  layout_selection:
+    type: options_select
+    region: content
+    weight: 127
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 30

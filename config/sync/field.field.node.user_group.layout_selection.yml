@@ -1,0 +1,21 @@
+uuid: caf01d7a-9eae-4efc-956a-46a6a32076fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_selection
+    - node.type.user_group
+id: node.user_group.layout_selection
+field_name: layout_selection
+entity_type: node
+bundle: user_group
+label: Layout
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: layout_library
+  handler_settings: {  }
+field_type: entity_reference

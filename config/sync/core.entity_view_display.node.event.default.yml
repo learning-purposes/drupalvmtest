@@ -14,10 +14,16 @@ dependencies:
   module:
     - datetime
     - image
+    - layout_builder
+    - layout_discovery
     - link
     - telephone
     - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
 id: node.event.default
 targetEntityType: node
 bundle: event

@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.user_group.field_group_contact
     - field.field.node.user_group.field_group_experience
     - field.field.node.user_group.field_group_website
+    - field.field.node.user_group.layout_selection
     - node.type.user_group
   module:
     - link
@@ -74,4 +75,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  layout_selection: true

@@ -1,0 +1,101 @@
+uuid: c70497dc-c24e-4e59-b083-9cb3d0df1c67
+langcode: en
+status: true
+dependencies: {  }
+id: oriental_layout
+label: 'oriental layout'
+targetEntityType: node
+targetBundle: user_group
+layout:
+  -
+    layout_id: layout_twocol_section
+    layout_settings:
+      label: 'silly section'
+      column_widths: 50-50
+    components:
+      337e5d91-892a-4b20-a3b3-953bfb2c0d70:
+        uuid: 337e5d91-892a-4b20-a3b3-953bfb2c0d70
+        region: second
+        configuration:
+          id: 'views_block:comments_recent-block_1'
+          label: ''
+          provider: views
+          label_display: '0'
+          views_label: ''
+          items_per_page: none
+          context_mapping: {  }
+        additional: {  }
+        weight: 0
+      14823b59-2d05-459b-833f-0e29c34facf0:
+        uuid: 14823b59-2d05-459b-833f-0e29c34facf0
+        region: first
+        configuration:
+          id: 'entity_view:user'
+          label: 'Entity view (User)'
+          provider: ctools
+          label_display: '0'
+          view_mode: default
+          context_mapping:
+            entity: '@user.current_user_context:current_user'
+        additional: {  }
+        weight: 0
+      b8c094a3-9445-4ddb-ace9-c435c28b4690:
+        uuid: b8c094a3-9445-4ddb-ace9-c435c28b4690
+        region: first
+        configuration:
+          id: 'field_block:node:user_group:field_contact_email'
+          label: 'Contact Email'
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: above
+            type: email_mailto
+            settings: {  }
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 1
+      a11ca64b-dda4-4ebd-85da-211f91bcd0ed:
+        uuid: a11ca64b-dda4-4ebd-85da-211f91bcd0ed
+        region: first
+        configuration:
+          id: 'field_block:node:user_group:field_group_experience'
+          label: 'Group Experience'
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: inline
+            type: list_default
+            settings: {  }
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 2
+      af67d286-d93a-4f55-a4f4-f6b44a232f69:
+        uuid: af67d286-d93a-4f55-a4f4-f6b44a232f69
+        region: first
+        configuration:
+          id: 'field_block:node:user_group:field_group_website'
+          label: 'Group Website'
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: inline
+            type: link
+            settings:
+              trim_length: 80
+              url_only: true
+              url_plain: false
+              rel: '0'
+              target: '0'
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 3
+    third_party_settings: {  }

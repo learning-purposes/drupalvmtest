@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.user_group.field_group_contact
     - field.field.node.user_group.field_group_experience
     - field.field.node.user_group.field_group_website
+    - field.field.node.user_group.layout_selection
     - node.type.user_group
   module:
     - link
@@ -50,3 +51,4 @@ hidden:
   field_event_sponsored: true
   field_group_contact: true
   field_group_experience: true
+  layout_selection: true

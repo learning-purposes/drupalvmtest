@@ -10,12 +10,136 @@ dependencies:
     - field.field.node.user_group.field_group_contact
     - field.field.node.user_group.field_group_experience
     - field.field.node.user_group.field_group_website
+    - field.field.node.user_group.layout_selection
     - node.type.user_group
   module:
+    - layout_builder
+    - layout_discovery
+    - layout_library
     - link
     - options
     - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          6993c5c1-9176-46f6-8be6-43c466356dad:
+            uuid: 6993c5c1-9176-46f6-8be6-43c466356dad
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:user_group:links'
+            additional: {  }
+            weight: 0
+          18fbe63c-5d5f-4e7d-a615-5d70bf553efb:
+            uuid: 18fbe63c-5d5f-4e7d-a615-5d70bf553efb
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:user_group:field_group_website'
+              formatter:
+                label: inline
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 1
+          9277c428-bbca-4185-b480-6fe6477df5fe:
+            uuid: 9277c428-bbca-4185-b480-6fe6477df5fe
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:user_group:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          40706786-a33e-4afe-9c55-33d8e85c9aa1:
+            uuid: 40706786-a33e-4afe-9c55-33d8e85c9aa1
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:user_group:field_group_contact'
+              formatter:
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 3
+          6de66365-5abe-4df1-bade-8968d3cf43c4:
+            uuid: 6de66365-5abe-4df1-bade-8968d3cf43c4
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:user_group:field_contact_email'
+              formatter:
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
+                type: basic_string
+            additional: {  }
+            weight: 4
+          08518044-1568-4be9-9fde-817dc2420eef:
+            uuid: 08518044-1568-4be9-9fde-817dc2420eef
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:user_group:field_group_experience'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: list_default
+            additional: {  }
+            weight: 5
+          aa97b39a-2cc5-4300-8791-e1ddbee1a151:
+            uuid: aa97b39a-2cc5-4300-8791-e1ddbee1a151
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:user_group:field_event_sponsored'
+              formatter:
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 6
+        third_party_settings: {  }
+  layout_library:
+    enable: true
 id: node.user_group.full
 targetEntityType: node
 bundle: user_group
@@ -75,4 +199,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  layout_selection: true
