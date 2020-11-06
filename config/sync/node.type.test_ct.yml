@@ -1,0 +1,18 @@
+uuid: 57a70877-9d55-4b8d-ab39-c78a3de201b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'test CT'
+type: test_ct
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

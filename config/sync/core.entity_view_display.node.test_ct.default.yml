@@ -1,0 +1,39 @@
+uuid: 3c5b59fa-d40d-4c74-83a7-5de0f5d5d0b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.test_ct.body
+    - field.field.node.test_ct.field_test_date
+    - node.type.test_ct
+  module:
+    - datetime
+    - text
+    - user
+id: node.test_ct.default
+targetEntityType: node
+bundle: test_ct
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_test_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
