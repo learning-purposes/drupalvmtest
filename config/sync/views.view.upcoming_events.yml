@@ -638,7 +638,7 @@ display:
         type: normal
         title: 'Upcoming Events'
         menu_name: main
-        weight: -47
+        weight: -46
         parent: ''
     cache_metadata:
       max-age: -1
