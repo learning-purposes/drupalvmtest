@@ -4,10 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.test_ct.body
-    - field.field.node.test_ct.field_test_date
     - node.type.test_ct
   module:
-    - datetime
     - text
     - user
 id: node.test_ct.default
@@ -22,18 +20,9 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_test_date:
-    weight: 102
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

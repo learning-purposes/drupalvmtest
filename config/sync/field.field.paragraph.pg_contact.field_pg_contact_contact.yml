@@ -1,0 +1,28 @@
+uuid: 94fdb3ac-d22d-44f2-b46d-116dd2be2385
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_contact_contact
+    - node.type.contact
+    - paragraphs.paragraphs_type.pg_contact
+id: paragraph.pg_contact.field_pg_contact_contact
+field_name: field_pg_contact_contact
+entity_type: paragraph
+bundle: pg_contact
+label: Contact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      contact: contact
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

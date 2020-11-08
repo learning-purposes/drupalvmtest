@@ -1,0 +1,21 @@
+uuid: fec92c23-282b-4613-9dbd-a33484bb9e7a
+langcode: en
+status: true
+dependencies:
+  module:
+    - book
+  theme:
+    - custombartik
+id: custombartik_booknavigation
+theme: custombartik
+region: sidebar_first
+weight: -7
+provider: null
+plugin: book_navigation
+settings:
+  id: book_navigation
+  label: 'Book navigation'
+  provider: book
+  label_display: visible
+  block_mode: 'all pages'
+visibility: {  }

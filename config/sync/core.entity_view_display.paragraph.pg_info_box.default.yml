@@ -1,0 +1,22 @@
+uuid: 81aa565c-2932-4d07-baf8-b3ae889a6a72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pg_info_box.field_pg_infobox_content
+    - paragraphs.paragraphs_type.pg_info_box
+id: paragraph.pg_info_box.default
+targetEntityType: paragraph
+bundle: pg_info_box
+mode: default
+content:
+  field_pg_infobox_content:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: d7adf2ad-9ac8-4eea-8e35-9bb8de55af1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pg_body.field_pg_body
+    - paragraphs.paragraphs_type.pg_body
+  module:
+    - text
+id: paragraph.pg_body.default
+targetEntityType: paragraph
+bundle: pg_body
+mode: default
+content:
+  field_pg_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

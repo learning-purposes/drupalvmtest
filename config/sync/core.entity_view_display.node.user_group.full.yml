@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.user_group.body
-    - field.field.node.user_group.field_contact_email
     - field.field.node.user_group.field_event_sponsored
     - field.field.node.user_group.field_group_contact
     - field.field.node.user_group.field_group_experience
@@ -91,21 +90,6 @@ third_party_settings:
                 type: string
             additional: {  }
             weight: 3
-          6de66365-5abe-4df1-bade-8968d3cf43c4:
-            uuid: 6de66365-5abe-4df1-bade-8968d3cf43c4
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:user_group:field_contact_email'
-              formatter:
-                label: inline
-                settings: {  }
-                third_party_settings: {  }
-                type: basic_string
-            additional: {  }
-            weight: 4
           08518044-1568-4be9-9fde-817dc2420eef:
             uuid: 08518044-1568-4be9-9fde-817dc2420eef
             region: content
@@ -151,13 +135,6 @@ content:
     weight: 2
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_contact_email:
-    weight: 4
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
     region: content
   field_event_sponsored:
     weight: 6

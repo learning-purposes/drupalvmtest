@@ -1,0 +1,22 @@
+uuid: 58039e52-4317-4c58-b4d1-9385ec2870d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pg_contact.field_pg_contact_contact
+    - paragraphs.paragraphs_type.pg_contact
+id: paragraph.pg_contact.default
+targetEntityType: paragraph
+bundle: pg_contact
+mode: default
+content:
+  field_pg_contact_contact:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

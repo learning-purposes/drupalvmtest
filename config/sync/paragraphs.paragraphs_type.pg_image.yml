@@ -1,0 +1,10 @@
+uuid: 4180bec3-d01a-467e-af88-a298abbe7e23
+langcode: en
+status: true
+dependencies: {  }
+id: pg_image
+label: 'Centered Image'
+icon_uuid: null
+icon_default: null
+description: 'this is a special image pg'
+behavior_plugins: {  }

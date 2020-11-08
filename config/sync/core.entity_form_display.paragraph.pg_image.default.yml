@@ -1,0 +1,26 @@
+uuid: 830a1ac7-80a9-4957-970d-c3f71d77ce37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pg_image.field_pg_centered_image_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.pg_image
+  module:
+    - image
+id: paragraph.pg_image.default
+targetEntityType: paragraph
+bundle: pg_image
+mode: default
+content:
+  field_pg_centered_image_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

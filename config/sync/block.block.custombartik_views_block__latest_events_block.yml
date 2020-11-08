@@ -1,0 +1,32 @@
+uuid: 86132bdf-e24d-40fd-b441-9ee708c3f939
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_events
+  module:
+    - node
+    - views
+  theme:
+    - custombartik
+id: custombartik_views_block__latest_events_block
+theme: custombartik
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'views_block:latest_events-block_1'
+settings:
+  id: 'views_block:latest_events-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      event: event
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

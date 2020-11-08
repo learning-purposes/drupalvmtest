@@ -1,0 +1,18 @@
+uuid: 06d88f94-4bf3-4161-a5de-b5568a0381cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Contact
+type: contact
+description: 'Contacts are listed here'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

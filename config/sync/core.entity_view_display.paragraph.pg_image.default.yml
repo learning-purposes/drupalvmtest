@@ -1,0 +1,24 @@
+uuid: c0cac0d3-5ba7-46ba-bab3-197b640c3342
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pg_image.field_pg_centered_image_image
+    - paragraphs.paragraphs_type.pg_image
+  module:
+    - image
+id: paragraph.pg_image.default
+targetEntityType: paragraph
+bundle: pg_image
+mode: default
+content:
+  field_pg_centered_image_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

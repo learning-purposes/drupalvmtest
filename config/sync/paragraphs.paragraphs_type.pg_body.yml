@@ -1,0 +1,10 @@
+uuid: 21851354-98de-4acd-ae8b-dfc4a21c7d58
+langcode: en
+status: true
+dependencies: {  }
+id: pg_body
+label: Body
+icon_uuid: null
+icon_default: null
+description: 'This is a special body'
+behavior_plugins: {  }

@@ -1,0 +1,28 @@
+uuid: 67fd89dd-a1c9-4c57-b4ab-4f16d6ba029e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_infobox_content
+    - node.type.test_ct
+    - paragraphs.paragraphs_type.pg_info_box
+id: paragraph.pg_info_box.field_pg_infobox_content
+field_name: field_pg_infobox_content
+entity_type: paragraph
+bundle: pg_info_box
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      test_ct: test_ct
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

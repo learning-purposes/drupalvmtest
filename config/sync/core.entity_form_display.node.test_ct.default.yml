@@ -4,10 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.test_ct.body
-    - field.field.node.test_ct.field_test_date
     - node.type.test_ct
   module:
-    - datetime
     - path
     - text
 id: node.test_ct.default
@@ -31,12 +29,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_test_date:
-    weight: 122
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
   path:
     type: path
     weight: 30

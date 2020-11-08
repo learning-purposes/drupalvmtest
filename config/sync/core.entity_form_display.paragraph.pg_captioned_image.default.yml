@@ -1,0 +1,35 @@
+uuid: 120ac1c7-c257-4c10-ab3d-e23dfaa1e1f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pg_captioned_image.field_pg_captioned_image_cation
+    - field.field.paragraph.pg_captioned_image.field_pg_captioned_image_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.pg_captioned_image
+  module:
+    - image
+id: paragraph.pg_captioned_image.default
+targetEntityType: paragraph
+bundle: pg_captioned_image
+mode: default
+content:
+  field_pg_captioned_image_cation:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_pg_captioned_image_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

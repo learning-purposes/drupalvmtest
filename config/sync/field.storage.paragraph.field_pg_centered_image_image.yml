@@ -1,21 +1,19 @@
-uuid: 1e93504e-53bf-4ef4-b4d6-0cde3d4a310a
+uuid: e23b30e9-6f89-47de-8524-f9227f32d66b
 langcode: en
 status: true
 dependencies:
   module:
     - file
     - image
-    - node
-_core:
-  default_config_hash: SkXIPKZYiIMMtnBmfnxk58RYfbZ8cHSw5NZPY_JByME
-id: node.field_image
-field_name: field_image
-entity_type: node
+    - paragraphs
+id: paragraph.field_pg_centered_image_image
+field_name: field_pg_centered_image_image
+entity_type: paragraph
 type: image
 settings:
   uri_scheme: public
   default_image:
-    uuid: null
+    uuid: ''
     alt: ''
     title: ''
     width: null
@@ -27,8 +25,6 @@ module: image
 locked: false
 cardinality: 1
 translatable: true
-indexes:
-  target_id:
-    - target_id
+indexes: {  }
 persist_with_no_fields: false
 custom_storage: false

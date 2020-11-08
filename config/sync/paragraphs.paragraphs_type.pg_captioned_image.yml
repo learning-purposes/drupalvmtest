@@ -1,0 +1,10 @@
+uuid: fa66331d-46cb-42df-9df5-251538130a7b
+langcode: en
+status: true
+dependencies: {  }
+id: pg_captioned_image
+label: 'Captioned Image'
+icon_uuid: null
+icon_default: null
+description: 'This serve an image with a caption'
+behavior_plugins: {  }

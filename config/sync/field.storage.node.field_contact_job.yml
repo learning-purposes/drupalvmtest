@@ -1,17 +1,18 @@
-uuid: 6d3feed2-6e89-42b3-8f47-8b53a645dd02
+uuid: 2ca5718a-ed2d-419f-9734-990f5525de84
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime
     - node
-id: node.field_test_date
-field_name: field_test_date
+id: node.field_contact_job
+field_name: field_contact_job
 entity_type: node
-type: datetime
+type: string
 settings:
-  datetime_type: datetime
-module: datetime
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

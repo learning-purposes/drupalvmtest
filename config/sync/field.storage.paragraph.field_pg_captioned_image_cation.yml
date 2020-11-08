@@ -1,0 +1,21 @@
+uuid: 9c77313a-4e8a-444d-ae0c-b38ac21272db
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_pg_captioned_image_cation
+field_name: field_pg_captioned_image_cation
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

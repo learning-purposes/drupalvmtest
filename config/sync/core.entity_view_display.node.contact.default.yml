@@ -1,0 +1,65 @@
+uuid: 0e741a86-f5a8-4d72-8636-e0cdc5c5423b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contact.field_contact_email
+    - field.field.node.contact.field_contact_job
+    - field.field.node.contact.field_contact_name
+    - field.field.node.contact.field_contact_phone
+    - field.field.node.contact.field_contact_photo
+    - node.type.contact
+  module:
+    - image
+    - user
+id: node.contact.default
+targetEntityType: node
+bundle: contact
+mode: default
+content:
+  field_contact_email:
+    weight: 2
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: email_mailto
+    region: content
+  field_contact_job:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_name:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_phone:
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_photo:
+    weight: 5
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

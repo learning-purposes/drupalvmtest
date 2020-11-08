@@ -1,0 +1,25 @@
+uuid: 747c7027-4339-4d1e-8c97-457902585c5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pg_contact.field_pg_contact_contact
+    - paragraphs.paragraphs_type.pg_contact
+id: paragraph.pg_contact.default
+targetEntityType: paragraph
+bundle: pg_contact
+mode: default
+content:
+  field_pg_contact_contact:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

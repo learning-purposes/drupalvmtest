@@ -1,0 +1,25 @@
+uuid: 2ac6ae42-e76d-4874-b7f1-9750720f8acd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pg_info_box.field_pg_infobox_content
+    - paragraphs.paragraphs_type.pg_info_box
+id: paragraph.pg_info_box.default
+targetEntityType: paragraph
+bundle: pg_info_box
+mode: default
+content:
+  field_pg_infobox_content:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

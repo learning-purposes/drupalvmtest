@@ -1,0 +1,10 @@
+uuid: f14fe94d-e439-4d2d-80c4-b42fe6df1fe1
+langcode: en
+status: true
+dependencies: {  }
+id: pg_info_box
+label: 'Info Box'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

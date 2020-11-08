@@ -1,0 +1,23 @@
+uuid: 75802381-e7b0-49c3-8e36-b10bd7c0b927
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pg_body
+    - paragraphs.paragraphs_type.pg_body
+  module:
+    - text
+id: paragraph.pg_body.field_pg_body
+field_name: field_pg_body
+entity_type: paragraph
+bundle: pg_body
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

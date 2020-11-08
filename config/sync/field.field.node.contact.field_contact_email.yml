@@ -1,15 +1,15 @@
-uuid: 6402f18e-bf88-4032-b660-4c137938666c
+uuid: 725570db-c568-4bd1-9672-d72510ccfce3
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_contact_email
-    - node.type.user_group
-id: node.user_group.field_contact_email
+    - node.type.contact
+id: node.contact.field_contact_email
 field_name: field_contact_email
 entity_type: node
-bundle: user_group
-label: 'Contact Email'
+bundle: contact
+label: Email
 description: ''
 required: false
 translatable: false

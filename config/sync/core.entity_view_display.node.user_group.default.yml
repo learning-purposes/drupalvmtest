@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.user_group.body
-    - field.field.node.user_group.field_contact_email
     - field.field.node.user_group.field_event_sponsored
     - field.field.node.user_group.field_group_contact
     - field.field.node.user_group.field_group_experience
@@ -27,13 +26,6 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_contact_email:
-    weight: 104
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
     region: content
   field_event_sponsored:
     weight: 106

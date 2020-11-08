@@ -1,0 +1,27 @@
+uuid: ea25a5c1-c41b-4f08-a6ab-c642b8144ac6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pg_body.field_pg_body
+    - paragraphs.paragraphs_type.pg_body
+  module:
+    - text
+id: paragraph.pg_body.default
+targetEntityType: paragraph
+bundle: pg_body
+mode: default
+content:
+  field_pg_body:
+    weight: 0
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+hidden:
+  created: true
+  status: true
