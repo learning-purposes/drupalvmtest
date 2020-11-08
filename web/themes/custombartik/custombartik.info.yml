@@ -1,0 +1,9 @@
+name: Custom Bartik
+type: theme
+description: This is a custom theme based on the core bartik theme
+core_version_requirement: 9.x
+
+base theme: bartik
+
+libraries:
+  - custombartik/global-css

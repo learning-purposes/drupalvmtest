@@ -1,0 +1,21 @@
+html {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+
+  /* makes fonts responsive */
+  @media (max-width: 600px) {
+    font-size: 80%;
+  }
+}
+
+
+h1 {
+  font-size: 200%; /*32px*/
+  margin-bottom: 0.8888888889%; /*8/900 X 100*/
+  line-height: 1.2;
+}
+
+p {
+  font-size: 125%;
+}
