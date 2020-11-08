@@ -3,3 +3,29 @@ body {
   // font-size: 2rem;
   // color: red;
 }
+
+.node .paragraph--type--pg-image {
+  .field--name-field-pg-centered-image-image img {
+    max-width: 100%;
+    max-height: auto;
+    display: inline-block;
+  }
+}
+
+.node .paragraph--type--pg-captioned-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.node .paragraph--type--pg-info-box {
+  background-color: lightblue;
+  font-size: 70%;
+  font-style: italic;
+  color: gray;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 50%;
+  margin: 0 auto;
+}
