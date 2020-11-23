@@ -11,7 +11,7 @@
 %}
 {{ attach_library('bartik/classy.node') }}
 <article{{attributes.addClass(classes)}}>
-	{# <header>
+	<header>
 				{{ title_prefix }}
 				{% if label and not page %}
 					<h2{{title_attributes.addClass('node__title')}}>
@@ -31,7 +31,7 @@
 						{{ metadata }}
 					</div>
 				{% endif %}
-			</header> #}
+			</header>
 	<div{{content_attributes.addClass('node__content','clearfix')}}>
 		{{ content }}
 	</div>
