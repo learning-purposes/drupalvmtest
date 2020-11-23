@@ -71,3 +71,4 @@ hidden:
   body: true
   field_event_sponsors: true
   field_event_topic: true
+  langcode: true

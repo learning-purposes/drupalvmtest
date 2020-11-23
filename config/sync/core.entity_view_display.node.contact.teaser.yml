@@ -28,3 +28,4 @@ hidden:
   field_contact_name: true
   field_contact_phone: true
   field_contact_photo: true
+  langcode: true

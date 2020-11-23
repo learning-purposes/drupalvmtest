@@ -49,4 +49,5 @@ hidden:
   field_event_sponsored: true
   field_group_contact: true
   field_group_experience: true
+  langcode: true
   layout_selection: true

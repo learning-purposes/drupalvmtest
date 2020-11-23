@@ -15,7 +15,6 @@ dependencies:
     - datetime
     - image
     - layout_builder
-    - layout_discovery
     - link
     - telephone
     - text
@@ -95,4 +94,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true
