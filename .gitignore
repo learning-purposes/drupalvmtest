@@ -5,7 +5,9 @@
 /web/modules/contrib/
 /web/themes/contrib/
 /web/profiles/contrib/
+/config/sync/core.extension.yml/
 # /web/libraries/
+
 
 # Ignore sensitive information
 /web/sites/*/settings.php
