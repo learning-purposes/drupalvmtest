@@ -29,7 +29,7 @@
         "drupal/pathauto": "^1.8",
         "drupal/token": "^1.7",
         "drupal/vani": "^1.2",
-        "drupal/webform": "^6.0@alpha",
+        "drupal/webform": "^6.0@beta",
         "drush/drush": "^10",
         "wikimedia/composer-merge-plugin": "^1.4"
     },
